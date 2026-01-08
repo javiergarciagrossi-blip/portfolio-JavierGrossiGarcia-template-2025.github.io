@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // Asegúrate de que el nombre del repositorio sea el correcto aquí
+  // Asegúrate de que las barras "/" estén presentes
   base: '/portfolio-JavierGrossiGarcia-template-2025.github.io/',
 })
