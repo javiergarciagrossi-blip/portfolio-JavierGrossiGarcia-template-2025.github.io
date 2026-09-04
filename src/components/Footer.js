@@ -8,8 +8,8 @@ export const Footer = () => `
       <div class="flex justify-center space-x-8 mb-8">
         <a href="https://github.com/javiergarciagrossi-blip" target="_blank" rel="noopener noreferrer" class="text-slate-500 dark:text-gray-400 hover:text-primary transition-all duration-300 hover:scale-110 transform">GitHub</a>
         
-        <a href="#" class="text-slate-500 dark:text-gray-400 hover:text-primary transition-all duration-300 hover:scale-110 transform">LinkedIn</a>
-        <a href="#" class="text-slate-500 dark:text-gray-400 hover:text-primary transition-all duration-300 hover:scale-110 transform">Email</a>
+        <a href="https://www.linkedin.com/in/javier-grossi-garc%C3%ADa-7549aa32a/" class="text-slate-500 dark:text-gray-400 hover:text-primary transition-all duration-300 hover:scale-110 transform">LinkedIn</a>
+        <a href="https://www.instagram.com/grossijavi/" class="text-slate-500 dark:text-gray-400 hover:text-primary transition-all duration-300 hover:scale-110 transform">Instagram</a>
       </div>
 
       <p class="text-xs text-slate-500 dark:text-gray-600 font-medium">
