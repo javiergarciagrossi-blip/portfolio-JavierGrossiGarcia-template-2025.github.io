@@ -26,6 +26,8 @@ export function projectDetails() {
     `;
   }
 
+  const imageUrl = project.image.startsWith('http') ? project.image : `${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`;
+
   // 4. Renderizamos el detalle
   return `
     ${Navbar()}
@@ -54,7 +56,7 @@ export function projectDetails() {
         <div class="max-w-6xl mx-auto reveal">
           <div class="rounded-2xl overflow-hidden shadow-2xl dark:shadow-[0_0_40px_rgba(0,0,0,0.3)] border border-slate-200 dark:border-white/10 aspect-video group">
             <img 
-              src="${project.image}" 
+              src="${imageUrl}"
               alt="${project.title}" 
               class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             >

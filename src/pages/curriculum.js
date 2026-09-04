@@ -3,6 +3,8 @@ import { Footer } from '../components/Footer';
 import { BackgroundShapes } from '../components/BackgroundShapes';
 
 export function curriculum() {
+  const curriculumUrl = `${import.meta.env.BASE_URL}curriculum-javier-grossi-garcia.pdf`;
+
   return `
     ${Navbar()}
     ${BackgroundShapes()}
@@ -22,7 +24,7 @@ export function curriculum() {
             </p>
           </div>
 
-          <a href="/curriculum-javier-grossi-garcia.pdf" download class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-white dark:text-black font-bold shadow-lg dark:shadow-[0_0_24px_rgba(0,188,212,0.3)] hover:scale-105 transition-transform">
+          <a href="${curriculumUrl}" download class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-white dark:text-black font-bold shadow-lg dark:shadow-[0_0_24px_rgba(0,188,212,0.3)] hover:scale-105 transition-transform">
             Descargar PDF
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0 4-4m-4 4-4-4m-5 6v1a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1" /></svg>
           </a>
@@ -31,10 +33,10 @@ export function curriculum() {
         <div class="reveal bg-white/80 dark:bg-dark-card/70 backdrop-blur-lg rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-xl dark:shadow-2xl">
           <iframe
             class="w-full h-[70vh] min-h-[620px] bg-slate-100 dark:bg-dark-bg"
-            src="/curriculum-javier-grossi-garcia.pdf"
+            src="${curriculumUrl}"
             title="Currículum de Javier Grossi García"
           >
-            <p class="p-6 text-slate-600 dark:text-gray-300">Tu navegador no puede mostrar el PDF. <a href="/curriculum-javier-grossi-garcia.pdf" class="text-primary font-bold underline">Descárgalo aquí</a>.</p>
+            <p class="p-6 text-slate-600 dark:text-gray-300">Tu navegador no puede mostrar el PDF. <a href="${curriculumUrl}" class="text-primary font-bold underline">Descárgalo aquí</a>.</p>
           </iframe>
         </div>
       </section>

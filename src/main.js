@@ -13,8 +13,21 @@ const routes = {
   '/project-details': projectDetails,
 };
 
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const appPath = (pathname) => {
+  if (basePath && pathname.startsWith(basePath)) {
+    return pathname.slice(basePath.length) || '/';
+  }
+
+  return pathname;
+};
+
+const toAppUrl = (pathname, search = '', hash = '') => `${basePath}${pathname}${search}${hash}`;
+
 const navigateTo = (url) => {
-  window.history.pushState(null, null, url);
+  const destination = new URL(url, window.location.origin);
+  window.history.pushState(null, null, toAppUrl(appPath(destination.pathname), destination.search, destination.hash));
   router();
 };
 
@@ -48,7 +61,7 @@ const initTheme = () => {
 };
 
 const router = async () => {
-  const path = window.location.pathname;
+  const path = appPath(window.location.pathname);
   // Usamos el 404 si la ruta no existe
   const page = routes[path] || notFound;
   
