@@ -1,7 +1,6 @@
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { ProjectCard } from '../components/ProjectCard';
-import { Contact } from '../components/Contact';
 import { BackgroundShapes } from '../components/BackgroundShapes';
 import { projectsData } from '../data/projectsData'; // 1. Importamos tus datos
 
@@ -32,18 +31,14 @@ export function home() {
           </span>
         </h1>
         
-        <p class="reveal text-xl md:text-2xl text-slate-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Creando experiencias digitales inmersivas donde la creatividad se encuentra con la ingeniería.
-        </p>
-        
         <div class="reveal flex flex-col sm:flex-row justify-center gap-5">
           <a href="/projects" class="group relative px-8 py-4 bg-primary text-white dark:text-black font-black rounded-full overflow-hidden transition-transform hover:scale-105 shadow-lg dark:shadow-[0_0_40px_rgba(0,188,212,0.4)]" data-link>
              <span class="relative z-10">Ver Mis Trabajos</span>
              <div class="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
           </a>
           
-          <a href="#contact" class="px-8 py-4 rounded-full border border-slate-300 dark:border-white/20 text-slate-700 dark:text-white font-bold hover:bg-slate-100 dark:hover:bg-white/10 transition backdrop-blur-md">
-            Contactar
+          <a href="/curriculum" class="px-8 py-4 rounded-full border border-slate-300 dark:border-white/20 text-slate-700 dark:text-white font-bold hover:bg-slate-100 dark:hover:bg-white/10 transition backdrop-blur-md" data-link>
+            Ver currículum
           </a>
         </div>
       </div>
@@ -65,7 +60,18 @@ export function home() {
       </div>
     </section>
 
-    ${Contact()}
+    <section class="px-4 pb-24 relative z-10">
+      <div class="reveal max-w-5xl mx-auto overflow-hidden rounded-3xl bg-slate-900 dark:bg-dark-card border border-slate-700 dark:border-white/10 px-8 py-12 md:px-16 md:py-16 text-center shadow-xl">
+        <span class="inline-block text-primary font-bold tracking-widest uppercase text-xs mb-4">Perfil profesional</span>
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-5">Conoce mi trayectoria</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto text-lg mb-8">Consulta mi formación, experiencia y las herramientas con las que trabajo.</p>
+        <a href="/curriculum" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-white dark:text-black font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20" data-link>
+          Ver currículum
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
     ${Footer()}
   `;
 }

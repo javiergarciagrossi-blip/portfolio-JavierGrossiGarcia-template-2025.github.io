@@ -3,7 +3,6 @@ import { Footer } from '../components/Footer';
 import { ProjectCard } from '../components/ProjectCard';
 import { projectsData } from '../data/projectsData';
 import { BackgroundShapes } from '../components/BackgroundShapes';
-import { Contact } from '../components/Contact'; 
 
 export function projects() {
   
@@ -39,6 +38,17 @@ export function projects() {
         </div>
       </section>
 
+    <section class="px-4 pb-24">
+        <div class="reveal max-w-5xl mx-auto overflow-hidden rounded-3xl bg-slate-900 dark:bg-dark-card border border-slate-700 dark:border-white/10 px-8 py-12 md:px-16 md:py-16 text-center shadow-xl">
+          <span class="inline-block text-primary font-bold tracking-widest uppercase text-xs mb-4">Perfil profesional</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-5">Conoce mi trayectoria</h2>
+          <p class="text-slate-300 max-w-2xl mx-auto text-lg mb-8">Consulta mi formación, experiencia y las herramientas con las que trabajo.</p>
+          <a href="/curriculum" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-white dark:text-black font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20" data-link>
+            Ver currículum
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
       <section class="reveal py-16 px-4 border-t border-slate-200 dark:border-white/5">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Código Abierto</h2>
@@ -53,7 +63,6 @@ export function projects() {
 
     </main>
 
-    ${Contact()} 
     ${Footer()}
   `;
 }

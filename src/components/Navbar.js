@@ -6,14 +6,14 @@ export const Navbar = () => `
       <div class="flex justify-between items-center h-20">
         
         <a href="/" class="text-2xl font-bold text-slate-900 dark:text-white tracking-tighter" data-link>
-          PORTFOLIO<span class="text-primary">.</span>
+          JAVIGROSSI<span class="text-primary">.</span>
         </a>
 
         <div class="flex items-center gap-6">
           <div class="hidden md:flex space-x-8">
             <a href="/" class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" data-link>Inicio</a>
             <a href="/projects" class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" data-link>Proyectos</a>
-            <a href="#contact" class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium">Contacto</a>
+            <a href="/curriculum" class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" data-link>Currículum</a>
           </div>
 
           ${ThemeToggle()} 
@@ -30,7 +30,7 @@ export const Navbar = () => `
     <div id="mobile-menu" class="hidden md:hidden bg-white/90 dark:bg-dark-bg/90 backdrop-blur-xl border-t border-slate-200 dark:border-white/10">
       <a href="/" class="block px-4 py-3 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-white/5" data-link>Inicio</a>
       <a href="/projects" class="block px-4 py-3 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-white/5" data-link>Proyectos</a>
-      <a href="#contact" class="block px-4 py-3 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-white/5">Contacto</a>
+      <a href="/curriculum" class="block px-4 py-3 text-slate-600 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-white/5" data-link>Currículum</a>
     </div>
   </nav>
 `;

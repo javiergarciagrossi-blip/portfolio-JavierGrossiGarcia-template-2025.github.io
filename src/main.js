@@ -1,6 +1,7 @@
 import './style.css';
 import { home } from './pages/home.js';
 import { projects } from './pages/projects.js';
+import { curriculum } from './pages/curriculum.js';
 import { notFound } from './pages/notFound.js';
 import { initScrollReveal } from './utils/observer.js';
 import { projectDetails } from './pages/projectDetails';
@@ -8,6 +9,7 @@ import { projectDetails } from './pages/projectDetails';
 const routes = {
   '/': home,
   '/projects': projects,
+  '/curriculum': curriculum,
   '/project-details': projectDetails,
 };
 
