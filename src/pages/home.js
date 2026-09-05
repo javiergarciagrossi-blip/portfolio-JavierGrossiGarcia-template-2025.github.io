@@ -27,9 +27,12 @@ export function home() {
         <h1 class="reveal text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-none text-slate-900 dark:text-white">
           Javier Grossi <br />
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-500 to-blue-600 drop-shadow-sm dark:drop-shadow-[0_0_25px_rgba(0,188,212,0.5)]">
-            Diseño & Código.
+            Diseñador Gráfico.
           </span>
         </h1>
+        <p class="reveal text-xl md:text-2xl text-slate-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Diseñando experiencias visuales donde la creatividad cobra identidad.
+        </p>
         
         <div class="reveal flex flex-col sm:flex-row justify-center gap-5">
           <a href="/projects" class="group relative px-8 py-4 bg-primary text-white dark:text-black font-black rounded-full overflow-hidden transition-transform hover:scale-105 shadow-lg dark:shadow-[0_0_40px_rgba(0,188,212,0.4)]" data-link>
